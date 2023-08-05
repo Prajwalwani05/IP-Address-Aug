@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    letter-spacing: .1rem;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #848dd2;
+}
+body::-webkit-scrollbar-track{
+    background-color:#373249;
+}
+.main{
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    /* display: none; */
+}
+.leftSec{
+    background-color: black;
+    width: 50%;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+}
+.leftSec .imgDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+.imgDiv img{
+    width: 45rem;
+}
+.leftSec h2{
+    color: #5c5f86;
+    font-size: 25px;
+    margin-bottom: 2rem;
+}
+.leftSec p{
+    color: white;
+    font-size: 1.3rem;
+    width: 75ch;
+    
+}
+.rightSec{
+    background-color: #5c5f86;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.rightSec .ipSec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.ipSec h3{
+    font-size: 2rem;
+    color: #B8BCCC;
+    font-weight: 500;
+}
+.ipSec p{
+    font-weight: 600;
+    font-size: 2rem;
+    padding-top: .2rem;
+    color: white;
+}
+.rightSec button{
+    width: fit-content;
+    font-size: 1.8rem;
+    background: transparent;
+    border:2px solid #B8BCCC;
+    border-radius: 8px;
+    color: #B8BCCC;
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+/*  another div */
+
+.innerMainDiv{
+    font-family: 'Montserrat', sans-serif;
+    display: none;
+}
+.innerMainDiv .sec1{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+} 
+.sec1 .ipDiv{
+    padding: 3rem;
+    padding-bottom: 2rem;
+} 
+.ipDiv .ipSec2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    gap: 1rem;
+    font-weight: 500;
+}
+.ipSec2 h3{
+    font-size: 2rem;
+    color: #76757a;
+}
+.ipSec2 p{
+    font-size: 1.8rem;
+    padding-top: .1rem;
+    font-weight: 500;
+    color: #c4c7d5;
+}
+.ipInfo{
+    display: flex;
+    color: #8d8c91;
+    align-items: center;
+    font-weight: 600;
+    justify-content: space-between;
+    padding-right: 5rem;
+    margin:3rem 0rem;
+    margin-right: 5rem;
+    font-size: 1.4rem;
+}
+.ipInfo p{
+    margin-bottom: 1rem;
+}
+.ipInfo span{
+    color: #B8BCCC;
+}
+.sec1 .mapDiv{
+    background-color: #575A85;
+    height:75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sec1 .mapDiv h2{
+    color: #dcdfec;
+    font-size: 2rem;
+    padding: 2rem;
+}
+.mapDiv .map{
+    width: 100rem;
+    height: 38rem;
+    margin-bottom: 2rem;
+    border: 3px solid limegreen;
+}
+.sec2{
+    /* height: 100vh; */
+    width: 100%;
+    background-color: black;
+}
+.sec2 h2{
+    color: #dcdfec;
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem;
+}
+.userinfo{
+    padding-left:3rem;
+    padding-bottom: 2rem;
+}
+.userinfo h2{
+    margin-bottom: 2rem;
+}
+.userinfo p{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #76757a;
+    font-weight: 500;
+}
+.userinfo p span{
+    color:#B8BCCC;
+    margin-left: 1rem;
+}
+.postOfficesDiv .searchInput{
+    display: flex;
+    justify-content: center;
+}
+.postOfficesDiv input{
+    width: 60vw;
+    font-size: 1.5rem;
+    padding: 1.2rem;
+    color:#8184b4;
+    border: 2px solid #8184b4;
+    background: transparent;
+    border-radius: 4px;
+    outline: none;
+}
+.postOfficesDiv input::placeholder{
+    color: #8184b4;
+}
+
+.postOfficesDiv .postOffices{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    padding: 3rem;
+    row-gap: 6rem;
+    margin-top: 2rem;
+    place-items: center;
+}
+.officeDiv{
+    border-radius:10px;
+    width: 35rem;
+    background-color: #575A85;
+    /* height: 15rem; */
+    padding: 2.5rem 2rem 2rem 2.5rem;
+}
+.officeDiv p {
+    
+    font-size: 1.6rem;
+    margin-bottom:1.5rem;
+    color: #b8bdce;
+    font-weight: 400;
+}
+.officeDiv p span{
+    color:#d5d9e8;
+    margin-left: 1rem;
+    font-weight: 500;
+}
+
+
+@media (max-width:420px) {
+    html{
+        font-size: 10%;
+    }
+    .main .leftSec{
+        height: fit-content;
+        width: 100%;
+        padding-top: 4rem;
+    }
+    .main .rightSec{
+        width: 100%;
+        height: 50vh;
+    }
+    .main .rightSec .ipSec{
+        display: block;
+        text-align: center;
+    }
+    .main .leftSec .imgDiv{
+        margin-top: 5rem;
+        height: fit-content;
+    }
+    .main .leftSec .imgDiv img{
+        width: 10rem;
+        margin-right: 7rem;
+        margin-bottom: 2rem;
+    }
+    .main .leftSec h2{
+        font-size: 2.2rem;
+    }
+    .main .leftSec p{
+        font-size: 1.3rem;
+        width: 50ch;
+    }
+
+    .innerMainDiv .sec1 .ipDiv{
+        padding-bottom: 0;
+    }
+    .innerMainDiv .ipDiv .ipInfo{
+        display: block;
+    }
+    .innerMainDiv .sec1{
+        height:76vh;
+        margin-bottom: 0;
+    }
+    .innerMainDiv .sec1 .mapDiv{
+        height: fit-content;
+        margin-top: 6rem;
+    }
+    .innerMainDiv .sec2{
+        overflow: hidden;
+    }
+    .innerMainDiv .sec1 .mapDiv .map{
+        width: 25rem;
+        height: 20rem;
+        margin-bottom: 3rem;
+    }
+    .innerMainDiv .sec2 .postOfficesDiv .postOffices{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 4rem;
+    }
+    .postOfficesDiv .postOffices .officeDiv{
+        width: 28rem;
+        padding: 2rem;
+    }
+
+}
+@media (max-width:620px){
+    html{
+        font-size: 50%;
+    }
+    .main{
+        display: block;
+        overflow: hidden;
+    }
+    .main .leftSec{
+        width: 100%;
+        padding-top: 4rem;
+        height: 50vh;
+    }
+    .main .rightSec{
+        width: 100%;
+        height:50vh;
+    }
+    .main .leftSec .imgDiv{
+        margin-top: 5rem;
+    }
+    .main .leftSec .imgDiv img{
+        width: 25rem;
+        margin-right: 7rem;
+        margin-bottom: 2rem;
+    }
+    .main .leftSec h2{
+        font-size: 3rem;
+    }
+    .main .leftSec p{
+        font-size: 1.3rem;
+        width: 70ch;
+    }
+
+
+    .innerMainDiv .sec1 .ipDiv{
+        padding-bottom: 0;
+    }
+    .innerMainDiv .ipDiv .ipInfo{
+        display: block;
+    }
+    .innerMainDiv .sec1{
+        height:fit-content;
+        margin-bottom: 0;
+    }
+    .innerMainDiv .sec1 .mapDiv{
+        height: fit-content;
+        margin-top: 6rem;
+    }
+    .innerMainDiv .sec2{
+        overflow: hidden;
+    }
+    .innerMainDiv .mapDiv .map{
+        width: 50rem;
+        height: 30rem;
+        margin-bottom: 3rem;
+    }
+    .innerMainDiv .postOfficesDiv .postOffices{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 4rem;
+    }
+
+}
+
+@media (max-width:720px){
+    html{
+        font-size: 50%;
+    }
+    .main{
+        display: block;
+        overflow: hidden;
+    }
+    .main .leftSec{
+        width: 100%;
+        padding-top: 4rem;
+        height: 50vh;
+    }
+    .main .rightSec{
+        width: 100%;
+        height:50vh;
+    }
+    .main .leftSec .imgDiv{
+        margin-top: 5rem;
+    }
+    .main .imgDiv img{
+        width: 25rem;
+        margin-right: 7rem;
+        margin-bottom: 2rem;
+    }
+    .main .leftSec h2{
+        font-size: 3rem;
+    }
+    .main .leftSec p{
+        font-size: 1.3rem;
+        width: 70ch;
+    }
+
+
+    .innerMainDiv .sec1 .ipDiv{
+        padding-bottom: 0;
+    }
+    .innerMainDiv .sec1{
+        height:fit-content;
+        margin-bottom: 0;
+    }
+    .innerMainDiv .sec1 .mapDiv{
+        height: fit-content;
+        margin-top: 6rem;
+    }
+    .innerMainDiv .sec2{
+        overflow: hidden;
+    }
+    .innerMainDiv .mapDiv .map{
+        width: 50rem;
+        height: 30rem;
+        margin-bottom: 3rem;
+    }
+    .innerMainDiv .postOfficesDiv .postOffices{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        margin-bottom: 0rem;
+        padding: 3rem;
+        row-gap: 2rem;
+        column-gap: 1rem;
+        margin-top: 2rem;
+        
+    }
+    .innerMainDiv .postOffices .officeDiv{
+       padding: 1.8rem;
+    }
+
+}
+
+
+@media (max-width:820px) {
+    html{
+        font-size: 60%;
+    }
+    
+    .main .leftSec{
+        width: 100%;
+        padding-top: 4rem;
+    }
+    .main .rightSec{
+        width: 100%;
+        /* height: 50vh; */
+    }
+    .main .rightSec .ipSec{
+        display: block;
+        text-align: center;
+    }
+    .main .leftSec .imgDiv{
+        margin-top: 5rem;
+    }
+    .main .imgDiv img{
+        width: 38rem;
+        padding-top: 10rem;
+    }
+    .main .main .leftSec h2{
+        font-size: 2.2rem;
+    }
+    .main .leftSec p{
+        font-size: 1.3rem;
+        width: 50ch;
+    }
+   
+
+    /* .ipDiv .ipInfo{
+        display: block;
+    } */
+    .innerMainDiv .sec1 .ipDiv{
+        padding: 3rem;
+        padding-bottom: 0rem;
+    } 
+    .innerMainDiv .sec1{
+        height:100vh;
+        margin-bottom: 0;
+    }
+    .innerMainDiv  .sec1 .mapDiv{
+        height: fit-content;
+        margin-top: 6rem;
+    }
+    .innerMainDiv  .sec2{
+        overflow: hidden;
+    }
+    .innerMainDiv .sec1 .mapDiv .map{
+        width: 45rem;
+        height: 30rem;
+        margin-bottom: 3rem;
+    }
+    .innerMainDiv  .postOfficesDiv .postOffices{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        margin-bottom: 0rem;
+        padding: 3rem;
+        row-gap: 2rem;
+        column-gap: 1rem;
+        margin-top: 2rem;
+    }
+    .innerMainDiv .postOffices .officeDiv{
+       padding: 1.5rem;
+       width: 30rem;
+    }
+}

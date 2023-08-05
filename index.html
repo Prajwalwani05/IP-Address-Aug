@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="main" id="mainDiv">
+      <div class="leftSec">
+        <h2>Post Office Application.</h2>
+        <p>This Application Allows you to extract information about the nearest Post Offices, based on your location.</p>
+        <div class="imgDiv">
+          <img src="./undraw_messenger_re_8bky 1.png" alt="img">
+        </div>
+      </div>
+      <div class="rightSec">
+        <div class="ipSec">
+          <h3>Your Current IP Address is</h3>
+          <p id="ip"></p>
+        </div>
+        <button id="startBtn">Get Started</button>
+      </div>
+    </div>
+
+
+    <div class="innerMainDiv" id="innerMainDiv">
+      <div class="sec1">
+        <div class="ipDiv">
+        <div class="ipSec2">
+          <h3>IP Address: </h3>
+          <p id="ip2"></p>
+        </div>
+          <div class="ipInfo">
+            <div class="latLong">
+              <p>Lat: <span id="lat"></span></p>
+              <p>Long: <span id="long"></span></p>
+            </div>
+            <div class="cityRegion">
+              <p>City: <span id="city"></span></p>
+              <p>Region: <span id="region"></span></p>
+            </div>
+            <div class="org">
+              <p>Organisation: <span id="organisation"></span></p>
+              <p>Hostname: <span id="hostname"></span></p>
+            </div>
+          </div>
+        </div>
+        <div class="mapDiv" id="mapDiv">
+         <h2>Your Current Location</h2>
+        </div>
+      </div>
+      <div class="sec2">
+        <div class="userinfo">
+          <h2>More Information About You</h2>
+          <p>Time Zone: <span id="timeZone"></span></p>
+          <p>Date And Time: <span id="date"></span></p>
+          <p>Pincode: <span id="pincode"></span></p>
+          <p>Message: <span id="numOfPincode"></span></p>
+        </div>
+        <div class="postOfficesDiv">
+          <h2>Post Offices Near You</h2>
+          <div class="searchInput">
+            <input type="text" placeholder="🔍︎ Search By Name"  id="search">
+            <ul id="suggestionList"></ul>
+          </div>
+          <div class="postOffices" id="postOffices">
+
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
